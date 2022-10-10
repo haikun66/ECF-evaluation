@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,5 +43,23 @@
         </div>
     </main>
     <script src="main.js"></script>
+
+    <?php
+        define('DB_SERVER', 'localhost');
+        define('DB_USERNAME', 'root');
+        define('DB_PASSWORD', 'dgfdfgsdfgf');
+        define('DB_NAME', 'api_web');
+        
+        /* Connexion à la base de données */
+        $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+        
+        /* verifier connection */
+        if($link === false){
+            echo "error db login";
+            die("ERROR: Could not connect." . mysqli_connect_error());
+            
+        } 
+    ?>
+    
 </body>
 </html>
