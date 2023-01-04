@@ -108,7 +108,7 @@ body {
     border-radius: 50%;
 }
 
-.forgot-pw{
+.forgot-pw {
     color: inherit;
 }
 #forgot-pw {
@@ -131,7 +131,7 @@ body {
     opacity: 1;
 }
 
-.close{
+.close {
     position: absolute;
     right: 1.5rem;
     top: 0.5rem;
@@ -139,4 +139,20 @@ body {
     font-weight: 900;
     text-decoration: none;
     color: inherit;
+}
+
+.liend {
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boite{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
